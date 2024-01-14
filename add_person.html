@@ -2,32 +2,40 @@
 <html lang="en"></html>
 <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="project.css">
 <title>Add Skater</title>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
 
 
-<h2>Add Skater</h2>
+<h1>Add Skater</h1>
 
 
-<form action="/process_form" method="post">
+<form id="skaterForm">
   <label for="skaterlevel">Level:</label><br>
-  <input type="text" id="sleve'"><br>
+  <input type="text" id="level"><br>
   <label for="name">Name:</label><br>
   <input type="text" id="name"><br>
   <label for="number">Number:</label><br>
   <input type="text" id="number"><br>
   <label for="position">Position</label><br>
   <input type="text" id="position"><br><br>
-  <input type="submit" value="Submit">
+  <input type="button" value="Submit" onclick="addSkater(document.getElementById('name').value, document.getElementById('number').value, document.getElementById('position').value, document.getElementById('level').value)">
   <input type="reset" value="Reset">
   
   
 </form>
+<footer>
+  <div>
+    <button id = "menu" onclick= "location.href = 'index.html'">menu</button>
 
+</div>
+  
+</footer>
+<script src="skaterData.js"></script>
+<script src="dateFunction.js"></script>
+<script src="formScript.js"></script>
 </body>
 </html>
 
