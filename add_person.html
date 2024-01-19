@@ -12,7 +12,28 @@
 <h1>Add Skater</h1>
 
 
-<form id="skaterForm">
+<div>
+  <p>What is the name of the player you would like to add?</p>
+  <input type="add-player" id="add-player-id" placeholder="Enter name">
+  <button id = "add-player-button">Add player</button>
+</div>
+
+<div>
+  <h3>Current Players</h3>
+  <p>Select the player you would like to remove.</p>
+  <ul id="player-list"></ul>    
+</div>
+
+<div>
+  <p><select id = "dropdown-player-list"></select></p>
+<div>
+  <label for="months">Select Month</label>
+  <select id="months"></select>
+</div>
+
+<div id="result-container"></div>
+
+<!--<form id="skaterForm">
   <label for="skaterlevel">Level:</label><br>
   <input type="text" id="level"><br>
   <label for="name">Name:</label><br>
@@ -25,7 +46,11 @@
   <input type="reset" value="Reset">
   
   
-</form>
+</form>-->
+
+<div>
+  <p><button id="button-confirm-attendance">Register attendance</button></p>
+</div>
 <footer>
   <div>
     <button id = "menu" onclick= "location.href = 'index.html'">menu</button>
